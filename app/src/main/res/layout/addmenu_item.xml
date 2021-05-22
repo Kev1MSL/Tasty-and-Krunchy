@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <TextView
+            android:id="@+id/dateheureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@id/dateHeureImageButon"
+            android:text="Date et heure : 22/12/2019 13:23"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/dateHeureImageButon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_clock"/>
+        <TextView
+            android:id="@+id/NourritureSelectionneeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateHeureImageButon"
+            android:text="Nourriture sélection-\nnée :"
+            android:layout_alignTop="@id/typeNourritureSpinner"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/typeNourritureSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:layout_below="@id/dateHeureImageButon"
+            android:layout_toEndOf="@id/NourritureSelectionneeTextView"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"/>
+
+        <SeekBar
+            android:layout_marginTop="10dp"
+            android:id="@+id/portionSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/typeNourritureSpinner"
+            android:indeterminate="false"
+            android:max="29"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:progress="2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/portionSeekBar"
+            android:id="@+id/portionTextView"
+            android:text="Nombre de portions : 3"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

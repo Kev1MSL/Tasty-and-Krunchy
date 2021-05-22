@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activityAddLayout"
+    android:layout_height="match_parent"
+    tools:context=".AddMenuActivity">
+
+    <include layout="@layout/toolbar" android:id="@+id/addmenueToolbar"/>
+
+    <TextView
+        android:layout_below="@id/addmenueToolbar"
+        android:id="@+id/menutitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre menu :"
+        android:textSize="22sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="13dp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/nbnourriturerestante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type de nourriture restant : 3"
+        android:layout_below="@id/menutitle"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_below="@id/addmenueToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addFoodButton"
+        android:src="@drawable/ic_add_menu"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_below="@id/addmenueToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeFoodButton"
+        android:src="@drawable/ic_remove"
+        android:layout_toEndOf="@id/addFoodButton"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/addFoodButton"
+        android:id="@+id/recyclerviewAddmenu"/>
+
+</RelativeLayout>

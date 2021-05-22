@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tasty n\' Krunchy</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tasty n\' Krunchy</string>
+    <string name="nav_header_subtitle">Alizée Vinas, Alexis Delaporte, Néo Tardy, Kevin Messali</string>
+    <string name="nav_header_desc">Tasty n\' Krunchy</string>
+    <string name="action_settings">Paramètres</string>
+
+    <string name="menu_menusliste">Menus</string>
+    <string name="menu_etats">Etats du Distributeur</string>
+    <string name="menu_interaction">Historique des intéractions</string>
+    <!--    <string name="menu_tools">Tools</string>-->
+    <string name="menu_devtools">Outils de développement</string>
+    <string name="d_veloppement">Développement</string>
+    <string name="addmenu">Ajouter un menu</string>
+    <string name="icon">icon</string>
+    <string name="types_de_nourriture"><u>Type de nourriture :</u> </string>
+    <string name="param_tres_wifi"><u>Paramètres WiFi :</u></string>
+    <!--    <string name="menu_send">Send</string>-->
+</resources>

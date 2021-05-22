@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/menulistefragment"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:text="Liste des menus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/text_home"
+        android:src="@drawable/ic_refresh"
+        android:layout_toEndOf="@id/text_home"
+        android:id="@+id/refreshButton"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text_home"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separator"
+        android:layout_marginTop="20dp"
+        android:id="@+id/menulistRecyclerView"/>
+
+    <TextView
+        android:id="@+id/nomenuTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Aucun menu trouvé, veuillez cliquer sur + \npour en ajouter."
+        android:textAlignment="center" />
+
+</RelativeLayout>

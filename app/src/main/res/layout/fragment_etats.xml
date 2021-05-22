@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/fragmentetat"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_etat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:text="Etats du distributeur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/text_etat"
+        android:src="@drawable/ic_refresh"
+        android:layout_toEndOf="@id/text_etat"
+        android:id="@+id/refreshButtonEtat"/>
+
+    <View
+        android:id="@+id/separatoretat"
+
+        android:layout_below="@id/text_etat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="95dp"
+        android:padding="20dp"
+        android:id="@+id/batterieConteneur"
+        android:background="@drawable/backgroundetatmedium"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batterieRestante"
+            android:text="Batterie restante : 50%"
+            android:textSize="19sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/QuantiteNourriture1Conteneur"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@drawable/backgroundetatgood"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/batterieConteneur">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minNourriture1"
+            android:text="Quantité de nourriture 1 : suffisante"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/QuantiteNourriture2Conteneur"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:background="@drawable/backgroundetatgood"
+        android:layout_below="@id/QuantiteNourriture1Conteneur"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minNourriture2"
+            android:text="Quantité de nourriture 2 : suffisante"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/QuantiteNourriture3Conteneur"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:padding="20dp"
+        android:background="@drawable/backgroundetatgood"
+        android:layout_below="@id/QuantiteNourriture2Conteneur"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minNourriture3"
+            android:text="Quantité de nourriture 3 : suffisante"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/MaxPoubelleConteneur"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:background="@drawable/backgroundetatcritic"
+        android:layout_below="@id/QuantiteNourriture3Conteneur"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/maxPoubelle"
+            android:text="Quantité de déchets : critique"
+            android:layout_centerHorizontal="true"
+            android:textSize="19sp"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
