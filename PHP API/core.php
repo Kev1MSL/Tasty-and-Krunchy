@@ -1,6 +1,5 @@
 <?php
 if (validerLaCleSecurisee() == true) {
-//HEY maboi
     connectionBaseDeDonnees();
     // Tentative de requete de type selection
     $sql = "SELECT * FROM MenuTable";
